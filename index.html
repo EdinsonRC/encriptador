@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon-edinson.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <img class="logo__alura" src="/assets/Top.png" alt="" />
+        <h1 class="titulo__header">
+          Encriptador de texto - Alura Challenges ONE
+        </h1>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          id="textUsuario"
+          class="texto__area"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí"
+        ></textarea>
+      </div>
+      <div class="terminos">
+        <p>
+          <i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas
+          y sin acentos
+        </p>
+      </div>
+      <div class="botones">
+        <button
+          onclick="encriptarBtn();"
+          class="btn__encriptar"
+          type="button"
+          id="boton-encriptar"
+        >
+          Encriptar
+        </button>
+        <button
+          class="btn__desencriptar"
+          type="button"
+          onclick="desencriptar()"
+        >
+          Desencriptar
+        </button>
+      </div>
+
+      <div class="encriptado">
+        <img src="/assets/Muñeco.png" alt="" id="muñeco" />
+        <div class="mensaje__encriptado" id="mensaje__encriptado">
+          <h2 id="titulo__mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+          <!-- <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"
+          ></textarea> -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="texto__footer">
+        <p>
+          Hecho por:
+          <span class="span__nombre">Edinson Javier Rosadio Carrilo </span>
+        </p>
+        <p>
+          Sigueme en mis redes:
+          <a href="https://github.com/EdinsonRC" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edinson-rosadio-carrillo/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </p>
+      </section>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
